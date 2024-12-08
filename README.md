@@ -21,7 +21,7 @@ This repository contains the **Hospital Management System**, a project designed 
 ## How to Run  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/VIVEK-P-V/HospitalApp-Hibernate-ORM-.git
+   git clone https://github.com/VIVEK-P-V/HospitalApp-Hibernate-ORM.git
    ```
 
 2. Open the project in Eclipse or IntelliJ IDEA.  
