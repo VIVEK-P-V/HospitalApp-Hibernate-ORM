@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+
+	<!-- Defining the persistence unit named 'joker' -->
+	<persistence-unit name="joker">
+
+		<!-- Specifying the JPA provider -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		<!-- Setting database connection properties -->
+		<properties>
+			<!-- JDBC driver class name -->
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+
+			<!-- Database URL -->
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/mystudentdb" />
+
+			<!-- Database user -->
+			<property name="javax.persistence.jdbc.user" value="root" />
+
+			<!-- Database password -->
+			<property name="javax.persistence.jdbc.password"
+				value="root" />
+
+			<!-- Show SQL statements in the console -->
+			<property name="hibernate.show_sql" value="true" />
+
+			<!-- Specifies how the schema should be updated -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<!-- Hibernate dialect for MySQL 8 -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL8Dialect" />
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
